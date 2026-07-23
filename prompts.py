@@ -41,7 +41,7 @@ PLANNER_PROMPT = ChatPromptTemplate.from_messages(
         (
             "system",
             "You are a Planning Agent. Given a user's GOAL, break it down into a "
-            "clear, ordered list of small, actionable tasks needed to achieve it. "
+            "clear, ordered list of up to 5 small, actionable tasks needed to achieve it. "
             "Return ONLY a numbered list of tasks, nothing else. "
             "Keep each task short (one line) and concrete.\n\n"
             "Recent conversation context (may be empty):\n{history}",
@@ -56,8 +56,8 @@ EXECUTOR_PROMPT = ChatPromptTemplate.from_messages(
             "system",
             "You are an Execution Agent. You are given ONE task from a larger plan. "
             "Do the task and reply in plain, simple language, like explaining it to "
-            "a beginner. Keep it short — 2 to 4 sentences, or a short list if the "
-            "task needs steps. No headings, no markdown formatting, no deep "
+            "a beginner. Use one concise sentence, or at most two short bullets if "
+            "steps are essential. No headings, no markdown formatting, no deep "
             "technical detail, no long explanations. Just give the normal, "
             "everyday answer someone would expect.\n\n"
             "Recent conversation context (may be empty):\n{history}",
