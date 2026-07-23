@@ -478,5 +478,25 @@
     "role": "system",
     "content": "Plan execution finished.",
     "timestamp": "2026-07-23T05:24:44"
+  },
+  {
+    "role": "user",
+    "content": "GOAL: what is ai",
+    "timestamp": "2026-07-23T07:05:36"
+  },
+  {
+    "role": "user",
+    "content": "GOAL: build a website",
+    "timestamp": "2026-07-23T07:06:05"
+  },
+  {
+    "role": "user",
+    "content": "GOAL: what  is ai",
+    "timestamp": "2026-07-23T07:07:21"
+  },
+  {
+    "role": "system",
+    "content": "Rejected off-topic input: I'm AI Task Planner Agent — I only help with breaking a GOAL down into steps and working through them (things like 'plan a trip', 'prepare for an interview', 'launch a small website'). That question is outside what I'm built for, so I can't help with it here. Please ask me something in the form of a goal or task you'd like planned and executed.",
+    "timestamp": "2026-07-23T07:07:29"
   }
 ]
